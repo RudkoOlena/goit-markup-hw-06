@@ -353,6 +353,23 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close>Закрыть</button>
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$">
+
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" pattern="">
+
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+                <button>Отправить</button>    
+
+
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
