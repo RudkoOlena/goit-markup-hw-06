@@ -353,7 +353,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close>Закрыть</button>
-            <form>
+            <form class="field">
                 <label for="name">Имя</label>
                 <input type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$">
 
@@ -364,8 +364,12 @@
                 <input type="email" name="email" id="email">
 
                 <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
 
+                <input type="checkbox" name="agree" value="agree" id="agree">
+                <label for="agree">Coглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
                 <button>Отправить</button>    
 
 
