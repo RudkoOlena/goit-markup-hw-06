@@ -314,7 +314,7 @@
                         <li><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
                     </ul>      
                 </address>
-            </div>
+       </div>
             <div class="join">
                 <h3>Присоединяйтесь</h3>
                 <ul class="social-icons">
@@ -348,29 +348,70 @@
                     </li>
                 </ul>    
             </div>
-        </div>
+            <div class="join">
+                <h3>Подпишитесь на рассылку</h3>
+                <form>
+                    <input class="field-input-footer" type="email" name="email" id="email" placeholder="E-mail">
+                    <label for="email">
+                        <button class="field-button">Подписаться
+                            <!-- <svg>
+                                <use href="./images/sprite.svg#send"></use>
+                            </svg> -->
+                        </button>
+                    </label>
+                </form>
+                
+            </div>
+            
+  </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close>Закрыть</button>
             <form class="field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$">
+                <h3 class="modal-title">Оставьте свои данные,мы Вам перезвоним</h3>
+                <div class="input-svg">
+                    <label class="field-label"for="name">Имя</label>
+                    <input class="field-input" type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$">
+                    <svg class="modal-svg">
+                        <use href="./images/sprite2.svg#person"></use>
+                    </svg>
+                </div>
 
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" pattern="">
+                <div class="input-svg">
+                    <label class="field-label"for="tel">Телефон</label>
+                    <input class="field-input" type="tel" name="tel" id="tel" pattern="">
+                    <svg class="modal-svg">
+                        <use href="./images/sprite2.svg#phone"></use>
+                    </svg>
+                </div>
 
-                <label for="email">Почта</label>
-                <input type="email" name="email" id="email">
+               <div class="input-svg">
+                   <label class="field-label"for="email">Почта</label>
+                    <input class="field-input" type="email" name="email" id="email">
+                    <svg class="modal-svg">
+                        <use href="./images/sprite2.svg#email"></use>
+                    </svg>
+               </div>
 
-                <label for="comment">Комментарий</label>
-                <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+               <div class="input-svg">
+                   <label class="field-label"for="comment">Комментарий</label>
+                   <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+               </div>
 
-                <input type="checkbox" name="agree" value="agree" id="agree">
-                <label for="agree">Coглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a>
-                </label>
-                <button>Отправить</button>    
+               <div class="input-svg">
+                   <label class="field-label hidden-checkbox"for="agree">
+                       <input class="checkbox" type="checkbox" name="agree" value="agree" id="agree">
+                       <span class="icon"></span>
+                       <span class="agree">Coглашаюсь с рассылкой и принимаю</span>
+                       <a class="agree-link" href="" target="_blank" rel="noopener noreferer">Условия договора</a>
+                   </label>
+               </div>
+                <div class="field-button-position">
+                    <button class="field-button">Отправить</button>
+                </div>
+                    
 
 
             </form>
